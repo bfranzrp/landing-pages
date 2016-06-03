@@ -84,3 +84,16 @@ section {
 .make {
 	padding: 20px 0 0 20px;
 }
+@media (max-width: 1250px) {
+	.container {
+		width: 1000px;
+	}
+	.col-2 {
+		width: 100%;
+	}
+}
+@media (max-width: 1050px) {
+	.container {
+		width: 800px;
+	}
+}
