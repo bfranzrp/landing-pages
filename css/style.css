@@ -1,0 +1,86 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+body {
+	margin: 0;
+}
+.logo {
+	text-align: center;
+	padding: 30px 0 25px 0;
+}
+h1 {
+	background: #222;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.2em;
+	color: #fff;
+	text-align: center;
+	line-height: 70px;
+	margin: 0;
+}
+.container {
+	overflow: auto;
+	width: 1250px;
+	margin: 0 auto;
+}
+section {
+	height: 160px;
+}
+.col-1 {
+	margin: 30px 0 0 0;
+	position: relative;
+}
+.col-2 {
+	width: 50%;
+	float: left;
+	position: relative;
+}
+.col-1:after,
+.col-2:after {
+	position: absolute;
+	content: '';
+	top: 0; right: 0; bottom: 0; left: 0;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,0.7+100 */
+    background: -moz-linear-gradient(left,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.7) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.7) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#b3000000',GradientType=1 ); /* IE6-9 */
+	opacity: 0;
+	-webkit-transition: all .25s ease;
+	-moz-transition: all .25s ease;
+	-ms-transition: all .25s ease;
+	-o-transition: all .25s ease;
+	transition: all .25s ease;
+}
+.col-1:hover:after,
+.col-2:hover:after {
+	opacity: 1;
+}
+.acura {
+	background: url(../images/acura-hero.jpg) no-repeat top right;
+	background-size: cover;
+}
+.honda {
+	background: url(../images/honda-hero.jpg) no-repeat top right;
+	background-size: cover;
+}
+.kia {
+	background: url(../images/kia-hero.jpg) no-repeat top right;
+	background-size: cover;
+}
+.mazda {
+	background: url(../images/mazda-hero.jpg) no-repeat top right;
+	background-size: cover;
+}
+.nissan {
+	background: url(../images/nissan-hero.jpg) no-repeat top right;
+	background-size: cover;
+}
+.toyota {
+	background: url(../images/toyota-hero.jpg) no-repeat top right;
+	background-size: cover;
+}
+.scion {
+	background: url(../images/scion-hero.jpg) no-repeat top right;
+	background-size: cover;
+}
+.make {
+	padding: 20px 0 0 20px;
+}
