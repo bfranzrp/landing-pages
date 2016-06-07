@@ -122,6 +122,12 @@ footer {
 	.container {
 		width: 100%;
 	}
+	section h2,
+	.col-1:after,
+	.col-2:after {
+		display: none;
+		opacity: 0;
+	}
 }
 @media (max-width: 550px) {
 	section {
@@ -132,18 +138,6 @@ footer {
 		float: left;
 		margin: 0;
 		background: transparent;
-	}
-	section h2,
-	.col-1:after,
-	.col-2:after {
-		display: none;
-		opacity: 0;
-	}
-	.col-1:hover:after,
-	.col-1:hover:after,
-	section:hover h2 {
-		display: none;
-		opacity: 0;
 	}
 	.make {
 		padding: 15px;
