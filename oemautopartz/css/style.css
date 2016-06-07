@@ -136,7 +136,7 @@ footer {
 	section h2,
 	.col-1:after,
 	.col-2:after {
-		display: none;
+		display: none !imoprtant;
 	}
 	.make {
 		padding: 15px;
