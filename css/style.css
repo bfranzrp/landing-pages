@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 body {
 	margin: 0;
+	font-size: 12px;
 }
 .logo {
 	text-align: center;
@@ -9,7 +10,7 @@ body {
 h1 {
 	background: #222;
 	font-family: 'Open Sans', sans-serif;
-	font-size: 1.2em;
+	font-size: 1.5em;
 	color: #fff;
 	text-align: center;
 	line-height: 70px;
@@ -48,6 +49,7 @@ section {
 	-ms-transition: all .25s ease;
 	-o-transition: all .25s ease;
 	transition: all .25s ease;
+	z-index: 2;
 }
 .col-1:hover:after,
 .col-2:hover:after {
@@ -61,16 +63,8 @@ section {
 	background: url(../images/honda-hero.jpg) no-repeat top right;
 	background-size: cover;
 }
-.kia {
-	background: url(../images/kia-hero.jpg) no-repeat top right;
-	background-size: cover;
-}
 .mazda {
 	background: url(../images/mazda-hero.jpg) no-repeat top right;
-	background-size: cover;
-}
-.nissan {
-	background: url(../images/nissan-hero.jpg) no-repeat top right;
 	background-size: cover;
 }
 .toyota {
@@ -83,6 +77,33 @@ section {
 }
 .make {
 	padding: 20px 0 0 20px;
+}
+section h2 {
+	position: absolute;
+	right: 0;
+	top: 50px;
+	font-family: 'Open Sans', sans-serif;
+	color: #fff;
+	z-index: 3;
+	opacity: 0;
+	-webkit-transition: all .35s ease;
+	-moz-transition: all .35s ease;
+	-ms-transition: all .35s ease;
+	-o-transition: all .35s ease;
+	transition: all .35s ease;
+}
+section:hover h2 {
+	right: 50px;
+	opacity: 1;
+}
+footer {
+	position: absolute;
+	bottom: 0; left: 0; right: 0;
+	background: #272727;
+	color: #fff;
+	text-align: center;
+	font-family: Helvetica,Arial,sans-serif;
+	padding: 15px 0;
 }
 @media (max-width: 1250px) {
 	.container {
@@ -100,5 +121,28 @@ section {
 @media (max-width: 767px) {
 	.container {
 		width: 100%;
+	}
+}
+@media (max-width: 550px) {
+	section {
+		height: auto;
+	}
+	.col-1, .col-2 {
+		width: 50%;
+		float: left;
+		margin: 0;
+		background: transparent;
+	}
+	section h2,
+	.col-1:after,
+	.col-2:after {
+		display: none;
+	}
+	.make {
+		padding: 15px;
+		max-width: 80%;
+	}
+	h1 { 
+		font-size: 1.2em;
 	}
 }

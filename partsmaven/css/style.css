@@ -1,0 +1,49 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+body {
+	margin: 0;
+	font-size: 12px;
+}
+.logo {
+	text-align: center;
+	padding: 30px 0 25px 0;
+}
+h1 {
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 25px;
+	color: #000;
+	text-align: center;
+	line-height: 70px;
+	margin: 0;
+}
+.container {
+	overflow: auto;
+	width: 1250px;
+	margin: 0 auto;
+}
+.make-row {
+	overflow: auto;
+}
+.make-row .make {
+	width: 20%;
+	text-align: center;
+	float: left;
+}
+.make-row .make-buffer {
+	width: 20%;
+	float: left;
+}
+footer {
+	background: #adadad;
+	color: rgb(37, 37, 37);
+	position: absolute;
+	bottom: 0; left: 0; right: 0;
+	text-align: center;
+	padding: 30px 0;
+	font-family: 'Open Sans', sans-serif;
+}
+@media (max-width: 1250px) {
+	.container {
+		width: 100%;
+		padding: 0 2%;
+	}
+}
