@@ -32,6 +32,9 @@ h1 {
 	width: 20%;
 	float: left;
 }
+.make-row:last-child {
+	padding-top: 20px;
+}
 footer {
 	background: #adadad;
 	color: rgb(37, 37, 37);
