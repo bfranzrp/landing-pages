@@ -122,16 +122,19 @@ footer {
 	.container {
 		width: 100%;
 	}
-	section h2,
+}
+@media (max-width: 550px) {
+	.logo {
+		max-width: 80%;
+	}
+	section {
+		height: auto;
+	}
+		section h2,
 	.col-1:after,
 	.col-2:after {
 		display: none;
 		opacity: 0;
-	}
-}
-@media (max-width: 550px) {
-	section {
-		height: auto;
 	}
 	.col-1, .col-2 {
 		width: 50%;
